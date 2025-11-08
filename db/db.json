@@ -1,18 +1,103 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "ano": 2001,
+      "genero": "Fantasia/Aventura",
+      "descricao": "Um grupo parte em uma jornada para destruir o Um Anel.",
+      "sinopse": "Em uma terra fantástica e única, um grupo parte para impedir o domínio das trevas.",
+      "diretor": "Peter Jackson",
+      "duracao": "2h 58min",
+      "imagem_principal": "img/o-senhor-dos-aneis-a-sociedade-do-anel.webp",
+      "data": "19 de Dezembro de 2001",
+      "fotos": [
+        "img/senhordosaneisfilme1.jpg",
+        "img/a-sociedade-do-anel-ft2.jpg"
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "titulo": "Interestelar",
+      "ano": 2014,
+      "genero": "Ficção Científica",
+      "descricao": "Exploradores viajam através de um buraco de minhoca em busca de um novo lar.",
+      "sinopse": "As reservas naturais da Terra estão acabando e um grupo tenta salvar a humanidade.",
+      "diretor": "Christopher Nolan",
+      "duracao": "2h 49min",
+      "imagem_principal": "img/interestrelarprincipal.jfif",
+      "data": "6 de Novembro de 2014",
+      "fotos": [
+        "img/interestelarfilme1.webp",
+        "img/interestrelarfilme2.webp"
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Coringa",
+      "ano": 2019,
+      "genero": "Drama/Crime",
+      "descricao": "A origem sombria de um dos maiores vilões da cultura pop.",
+      "sinopse": "Um comediante fracassado encontra o caos ao tentar ser notado pela sociedade.",
+      "diretor": "Todd Phillips",
+      "duracao": "2h 02min",
+      "imagem_principal": "img/coringaprincipal.webp",
+      "data": "3 de Outubro de 2019",
+      "fotos": [
+        "img/coringafilme1.jpg",
+        "img/coringafilme2.webp"
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "ano": 2001,
+      "genero": "Fantasia/Aventura",
+      "descricao": "Harry descobre que é bruxo e enfrenta Voldemort pela primeira vez.",
+      "sinopse": "Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger.",
+      "diretor": "Chris Columbus",
+      "destaque": false,
+      "duracao": "2h 32min",
+      "imagem_principal": "img/harrypotter-pedrafilosofalprincipal.webp",
+      "data": "23 de Novembro de 2001",
+      "fotos": [
+        "img/harrypotterfilme1.jpg",
+        "img/harrypotterfilme2.jpg"
+      ]
+    },
+    {
+      "id": "5",
+      "titulo": "Vingadores",
+      "ano": 2012,
+      "genero": "Ação / Super-herói",
+      "descricao": "Os heróis mais poderosos da Terra unidos.",
+      "sinopse": "Os heróis mais poderosos da Terra devem se unir e aprender a lutar como uma equipe para impedir que um exército alienígena escravize a humanidade.",
+      "diretor": "Joss Whedon",
+      "destaque": true,
+      "duracao": "2 h 23 min",
+      "imagem_principal": "img/vingadoresprincipal.png",
+      "data": "27 de Abril de 2012",
+      "fotos": [
+        "img/vingadoresfilme1.webp",
+        "img/vingadoresfilme2.jpg "
+      ]
+    },
+    {
+      "id": "6",
+      "titulo": "Invocação do Mal",
+      "ano": 2013,
+      "genero": "Terror",
+      "descricao": "Os investigadores paranormais Ed e Lorraine Warren enquanto tentam ajudar a família Perron a se defender de uma entidade demoníaca que os aterroriza em sua casa na fazenda em Harrisville, Rhode Island.",
+      "sinopse": "Harrisville, Estados Unidos. Um casal (Ron Livinston e Lili Taylor) muda para uma casa nova ao lado de suas cinco filhas. Inexplicavelmente, estranhos acontecimentos começam a assustar as crianças, o pai e, principalmente, a mãe. Preocupada com algumas manchas que aparecem em seu corpo e com uma sequência de sustos que levou, ela decide procurar um famoso casal de investigadores paranormais (Patrick Wilson e Vera Farmiga), mas eles não aceitam o convite, acreditando ser somente mais um engano de pessoas apavoradas com canos que fazem barulhos durante a noite ou coisas do gênero. Porém, quando eles aceitam fazer uma visita ao local, descobrem que algo muito poderoso e do mal reside ali. Agora, eles precisam descobrir o que é e o porquê daquilo tudo acontecendo com os membros daquela família. É quando o passado começa a revelar uma entidade demoníaca querendo continuar sua trajetória de maldades.",
+      "diretor": " James Wan",
+      "destaque": false,
+      "duracao": " 1h 50min",
+      "imagem_principal": "img/invocacaoprincipal.jpg",
+      "data": "13 de Setembro de 2013",
+      "fotos": [
+        "img/invocacaaofilme1.avif",
+        "img/invocacaofilme2.jpg"
+      ]
     }
   ]
 }

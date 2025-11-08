@@ -10,21 +10,21 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ## Informações do trabalho
 
-- Nome:
+- Nome:Débora Luiza 
 - Matricula:
-- Proposta de projeto escolhida:
+- Proposta de projeto escolhida:Site de filmes 
 - Breve descrição sobre seu projeto:
 
 **Print dos testes da API com Postman ou similar**
 
 << COLOQUE A IMAGEM GET AQUI >>
-
+![alt text](metodoget.png)
 << COLOQUE A IMAGEM POST AQUI >>
-
+![alt text](metodopost.png)
 << COLOQUE A IMAGEM PUT AQUI >>
-
+![alt text](metodoput.png)
 << COLOQUE A IMAGEM DELETE AQUI >>
-
+![alt text](metododelete.png)
 **Print da aba NETWORK com requisições Fetch/XHR POST e GET**
 
 <<  COLOQUE A IMAGEM AQUI >>
