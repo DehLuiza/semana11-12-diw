@@ -11,8 +11,8 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 ## Informações do trabalho
 
 - Nome:Débora Luiza 
-- Matricula:
-- Proposta de projeto escolhida:Site de filmes 
+- Matricula:875055
+- Proposta de projeto escolhida: Site de filmes 
 - Breve descrição sobre seu projeto:
 
 **Print dos testes da API com Postman ou similar**

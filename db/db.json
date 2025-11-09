@@ -9,11 +9,11 @@
       "sinopse": "Em uma terra fantástica e única, um grupo parte para impedir o domínio das trevas.",
       "diretor": "Peter Jackson",
       "duracao": "2h 58min",
-      "imagem_principal": "img/o-senhor-dos-aneis-a-sociedade-do-anel.webp",
+      "imagem_principal": "semana11-12-diw/public/img/o-senhor-dos-aneis-a-sociedade-do-anel.webp",
       "data": "19 de Dezembro de 2001",
       "fotos": [
-        "img/senhordosaneisfilme1.jpg",
-        "img/a-sociedade-do-anel-ft2.jpg"
+        "semana11-12-diw/public/img/senhordosaneisfilme1.jpg",
+        "semana11-12-diw/public/img/a-sociedade-do-anel-ft2.jpg"
       ]
     },
     {
@@ -28,8 +28,8 @@
       "imagem_principal": "img/interestrelarprincipal.jfif",
       "data": "6 de Novembro de 2014",
       "fotos": [
-        "img/interestelarfilme1.webp",
-        "img/interestrelarfilme2.webp"
+        "semana11-12-diw/public/img/interestrelarfilme2.webp",
+        "semana11-12-diw/public/img/interestelarfilme1.webp"
       ]
     },
     {
@@ -41,11 +41,11 @@
       "sinopse": "Um comediante fracassado encontra o caos ao tentar ser notado pela sociedade.",
       "diretor": "Todd Phillips",
       "duracao": "2h 02min",
-      "imagem_principal": "img/coringaprincipal.webp",
+      "imagem_principal": "semana11-12-diw/public/img/coringaprincipal.webp",
       "data": "3 de Outubro de 2019",
       "fotos": [
-        "img/coringafilme1.jpg",
-        "img/coringafilme2.webp"
+        "semana11-12-diw/public/img/coringafilme1.jpg",
+        "semana11-12-diw/public/img/coringafilme2.webp"
       ]
     },
     {
@@ -58,11 +58,11 @@
       "diretor": "Chris Columbus",
       "destaque": false,
       "duracao": "2h 32min",
-      "imagem_principal": "img/harrypotter-pedrafilosofalprincipal.webp",
+      "imagem_principal": "semana11-12-diw/public/img/harrypotter-pedrafilosofalprincipal.webp",
       "data": "23 de Novembro de 2001",
       "fotos": [
-        "img/harrypotterfilme1.jpg",
-        "img/harrypotterfilme2.jpg"
+        "semana11-12-diw/public/img/harrypotterfilme1.jpg",
+        "semana11-12-diw/public/img/harrypotterfilme2.jpg"
       ]
     },
     {
@@ -75,11 +75,11 @@
       "diretor": "Joss Whedon",
       "destaque": true,
       "duracao": "2 h 23 min",
-      "imagem_principal": "img/vingadoresprincipal.png",
+      "imagem_principal": "semana11-12-diw/public/img/vingadoresprincipal.png",
       "data": "27 de Abril de 2012",
       "fotos": [
-        "img/vingadoresfilme1.webp",
-        "img/vingadoresfilme2.jpg "
+        "semana11-12-diw/public/img/vingadoresfilme1.webp",
+        "semana11-12-diw/public/img/vingadoresfilme2.jpg"
       ]
     },
     {
@@ -92,11 +92,11 @@
       "diretor": " James Wan",
       "destaque": false,
       "duracao": " 1h 50min",
-      "imagem_principal": "img/invocacaoprincipal.jpg",
+      "imagem_principal": "semana11-12-diw/public/img/invocacaoprincipal.jpg",
       "data": "13 de Setembro de 2013",
       "fotos": [
-        "img/invocacaaofilme1.avif",
-        "img/invocacaofilme2.jpg"
+        "semana11-12-diw/public/img/invocacaaofilme1.avif",
+        "semana11-12-diw/public/img/invocacaofilme2.jpg"
       ]
     }
   ]

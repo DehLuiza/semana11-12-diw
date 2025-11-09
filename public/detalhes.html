@@ -1,31 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Detalhes do Filme</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Filme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="bg-dark text-white p-3">
-<div class="container d-flex align-items-center justify-content-between">
-<h1 class="h5 m-0"> Detalhes do Filme</h1>
-<a class="text-white" href="index.html">Voltar</a>
-</div>
+  <div class="container d-flex align-items-center justify-content-between">
+    <h1 class="h4 m-0">Portal de Filmes</h1>
+    <nav>
+      <a class="text-white me-3" href="index.html">Home</a>
+      <a class="text-white" href="cadastro_filmes.html">Cadastrar</a>
+    </nav>
+  </div>
 </header>
 
-
-<main class="container my-4" id="detalhe-root">
+<main class="container my-5" id="detalhes-filme">
+  <h2 class="text-center mb-4">Carregando detalhes...</h2>
 </main>
 
-
 <footer class="bg-dark text-white text-center py-3 mt-4">
-&copy; 2025 — Portal de Filmes
+  &copy; 2025 — Portal de Filmes
 </footer>
 
+<script>
+const API_URL = "http://localhost:3000/filmes";
+const urlParams = new URLSearchParams(window.location.search);
+const filmeId = urlParams.get("id");
+async function carregarDetalhes() {
+  try {
+    const response = await fetch(`${API_URL}/${filmeId}`);
+    const filme = await response.json();
+    exibirDetalhes(filme);
+  } catch (error) {
+    document.getElementById("detalhes-filme").innerHTML = "<p class='text-danger'>Erro ao carregar filme.</p>";
+  }
+}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script>
+function exibirDetalhes(filme) {
+  document.getElementById("detalhes-filme").innerHTML = `
+    <div class="card shadow-lg">
+      <img src="${filme.imagem}" class="card-img-top" alt="${filme.titulo}">
+      <div class="card-body">
+        <h3 class="card-title">${filme.titulo}</h3>
+        <p class="text-muted">${filme.genero} | ${filme.ano}</p>
+        <p>${filme.descricao}</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="index.html" class="btn btn-secondary">Voltar</a>
+          <button class="btn btn-danger" onclick="deletarFilme(${filme.id})">Excluir</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+async function deletarFilme(id) {
+  if (confirm("Tem certeza que deseja excluir este filme?")) {
+    await fetch(`${API_URL}/${id}`, { method: "DELETE" });
+    alert("Filme excluído com sucesso!");
+    window.location.href = "index.html";
+  }
+}
+document.addEventListener("DOMContentLoaded", carregarDetalhes);
+</script>
 </body>
-</html> 
+</html>

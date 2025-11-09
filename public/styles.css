@@ -1,0 +1,49 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  color: blueviolet;
+}
+
+a {
+  color: blueviolet;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #9a4dff;
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.4);
+}
+
+.card-title {
+  color: blueviolet;
+}
+
+.btn-primary {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.btn-primary:hover {
+  background-color: #9a4dff;
+  border-color: #9a4dff;
+}
+
+footer {
+  background-color: #111;
+  border-top: 1px solid blueviolet;
+}
