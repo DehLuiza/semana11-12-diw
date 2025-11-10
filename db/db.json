@@ -9,12 +9,13 @@
       "sinopse": "Em uma terra fantástica e única, um grupo parte para impedir o domínio das trevas.",
       "diretor": "Peter Jackson",
       "duracao": "2h 58min",
-      "imagem_principal": "semana11-12-diw/public/img/o-senhor-dos-aneis-a-sociedade-do-anel.webp",
+      "imagem_principal": "img/o-senhor-dos-aneis-a-sociedade-do-anel.webp",
       "data": "19 de Dezembro de 2001",
       "fotos": [
-        "semana11-12-diw/public/img/senhordosaneisfilme1.jpg",
-        "semana11-12-diw/public/img/a-sociedade-do-anel-ft2.jpg"
-      ]
+        "img/senhordosaneisfilme1.jpg",
+        "img/a-sociedade-do-anel-ft2.jpg"
+      ],
+      "destaque": true
     },
     {
       "id": "2",
@@ -28,9 +29,10 @@
       "imagem_principal": "img/interestrelarprincipal.jfif",
       "data": "6 de Novembro de 2014",
       "fotos": [
-        "semana11-12-diw/public/img/interestrelarfilme2.webp",
-        "semana11-12-diw/public/img/interestelarfilme1.webp"
-      ]
+        "img/interestrelarfilme2.webp",
+        "img/interestelarfilme1.webp"
+      ],
+      "destaque": true
     },
     {
       "id": "3",
@@ -41,12 +43,13 @@
       "sinopse": "Um comediante fracassado encontra o caos ao tentar ser notado pela sociedade.",
       "diretor": "Todd Phillips",
       "duracao": "2h 02min",
-      "imagem_principal": "semana11-12-diw/public/img/coringaprincipal.webp",
+      "imagem_principal": "img/coringaprincipal.webp",
       "data": "3 de Outubro de 2019",
       "fotos": [
-        "semana11-12-diw/public/img/coringafilme1.jpg",
-        "semana11-12-diw/public/img/coringafilme2.webp"
-      ]
+        "img/coringafilme1.jpg",
+        "img/coringafilme2.webp"
+      ],
+      "destaque": true
     },
     {
       "id": "4",
@@ -54,16 +57,16 @@
       "ano": 2001,
       "genero": "Fantasia/Aventura",
       "descricao": "Harry descobre que é bruxo e enfrenta Voldemort pela primeira vez.",
-      "sinopse": "Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger.",
+      "sinopse": "Harry Potter é um garoto órfão que vive infeliz com seus tios. Ele recebe uma carta contendo um convite para Hogwarts, uma famosa escola de magia. Com Hagrid, descobre o mundo mágico e vive diversas aventuras com Rony e Hermione.",
       "diretor": "Chris Columbus",
-      "destaque": false,
       "duracao": "2h 32min",
-      "imagem_principal": "semana11-12-diw/public/img/harrypotter-pedrafilosofalprincipal.webp",
+      "imagem_principal": "img/harrypotter-pedrafilosofalprincipal.webp",
       "data": "23 de Novembro de 2001",
       "fotos": [
-        "semana11-12-diw/public/img/harrypotterfilme1.jpg",
-        "semana11-12-diw/public/img/harrypotterfilme2.jpg"
-      ]
+        "img/harrypotterfilme1.jpg",
+        "img/harrypotterfilme2.jpg"
+      ],
+      "destaque": true
     },
     {
       "id": "5",
@@ -73,31 +76,31 @@
       "descricao": "Os heróis mais poderosos da Terra unidos.",
       "sinopse": "Os heróis mais poderosos da Terra devem se unir e aprender a lutar como uma equipe para impedir que um exército alienígena escravize a humanidade.",
       "diretor": "Joss Whedon",
-      "destaque": true,
       "duracao": "2 h 23 min",
-      "imagem_principal": "semana11-12-diw/public/img/vingadoresprincipal.png",
+      "imagem_principal": "img/vingadoresprincipal.png",
       "data": "27 de Abril de 2012",
       "fotos": [
-        "semana11-12-diw/public/img/vingadoresfilme1.webp",
-        "semana11-12-diw/public/img/vingadoresfilme2.jpg"
-      ]
+        "img/vingadoresfilme1.webp",
+        "img/vingadoresfilme2.jpg"
+      ],
+      "destaque": true
     },
     {
       "id": "6",
       "titulo": "Invocação do Mal",
       "ano": 2013,
       "genero": "Terror",
-      "descricao": "Os investigadores paranormais Ed e Lorraine Warren enquanto tentam ajudar a família Perron a se defender de uma entidade demoníaca que os aterroriza em sua casa na fazenda em Harrisville, Rhode Island.",
-      "sinopse": "Harrisville, Estados Unidos. Um casal (Ron Livinston e Lili Taylor) muda para uma casa nova ao lado de suas cinco filhas. Inexplicavelmente, estranhos acontecimentos começam a assustar as crianças, o pai e, principalmente, a mãe. Preocupada com algumas manchas que aparecem em seu corpo e com uma sequência de sustos que levou, ela decide procurar um famoso casal de investigadores paranormais (Patrick Wilson e Vera Farmiga), mas eles não aceitam o convite, acreditando ser somente mais um engano de pessoas apavoradas com canos que fazem barulhos durante a noite ou coisas do gênero. Porém, quando eles aceitam fazer uma visita ao local, descobrem que algo muito poderoso e do mal reside ali. Agora, eles precisam descobrir o que é e o porquê daquilo tudo acontecendo com os membros daquela família. É quando o passado começa a revelar uma entidade demoníaca querendo continuar sua trajetória de maldades.",
-      "diretor": " James Wan",
-      "destaque": false,
-      "duracao": " 1h 50min",
-      "imagem_principal": "semana11-12-diw/public/img/invocacaoprincipal.jpg",
+      "descricao": "Os investigadores paranormais Ed e Lorraine Warren ajudam a família Perron a se defender de uma entidade demoníaca.",
+      "sinopse": "Um casal muda para uma casa nova e passa a viver eventos paranormais aterrorizantes. Os investigadores Ed e Lorraine Warren tentam livrar a família de uma entidade maligna.",
+      "diretor": "James Wan",
+      "duracao": "1h 50min",
+      "imagem_principal": "img/invocacaoprincipal.jpg",
       "data": "13 de Setembro de 2013",
       "fotos": [
-        "semana11-12-diw/public/img/invocacaaofilme1.avif",
-        "semana11-12-diw/public/img/invocacaofilme2.jpg"
-      ]
+        "img/invocacaaofilme1.avif",
+        "img/invocacaofilme2.jpg"
+      ],
+      "destaque": false
     }
   ]
 }

@@ -20,6 +20,7 @@ a:hover {
 .card {
   background-color: #111;
   border: 1px solid blueviolet;
+  color: antiquewhite;
   border-radius: 10px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -46,4 +47,115 @@ a:hover {
 footer {
   background-color: #111;
   border-top: 1px solid blueviolet;
+}
+
+#sobre {
+  background-color: #111; 
+  color: #0a0a0a;            
+  border: 1px solid blueviolet; 
+  box-shadow: 0 2px 8px rgba(138, 43, 226, 0.3);
+}
+
+#sobre h3 {
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+
+#sobre p {
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+
+body.cadastro-filmes {
+  background-color: #020202;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+body.cadastro-filmes .container {
+  background-color: #000;
+  max-width: 800px;
+}
+
+body.cadastro-filmes .card {
+  background-color: #111;
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+  color: white;
+}
+
+body.cadastro-filmes .card h2 {
+  color: blueviolet;
+}
+body.cadastro-filmes .form-label {
+  color: blueviolet;
+}
+
+body.cadastro-filmes .form-control {
+  background-color: #222;
+  border: 1px solid #333;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+body.cadastro-filmes .form-control::placeholder {
+  color: #888;
+}
+
+body.cadastro-filmes .form-control:focus {
+  background-color: #1a1a1a;
+  border-color: blueviolet;
+  box-shadow: 0 0 6px rgba(138, 43, 226, 0.5);
+  color: white;
+}
+
+body.cadastro-filmes .form-check-label {
+  color: #ccc;
+}
+
+body.cadastro-filmes .form-check-input {
+  background-color: #222;
+  border: 1px solid blueviolet;
+}
+
+body.cadastro-filmes .form-check-input:checked {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+body.cadastro-filmes .btn-success {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+body.cadastro-filmes .btn-success:hover {
+  background-color: #9a4dff;
+  border-color: #9a4dff;
+}
+
+body.cadastro-filmes .btn-secondary {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.cadastro-filmes .btn-secondary:hover {
+  background-color: #444;
+  border-color: #777;
+}
+
+body.cadastro-filmes header {
+  background-color: #111 !important;
+  border-bottom: 1px solid blueviolet;
+}
+
+body.cadastro-filmes footer {
+  background-color: #111;
+  border-top: 1px solid blueviolet;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }

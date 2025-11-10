@@ -1,91 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastrar Filme</title>
+  <title>Cadastro de Filmes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<header class="bg-dark text-white p-3">
-  <div class="container d-flex align-items-center justify-content-between">
-    <h1 class="h4 m-0">Portal de Filmes</h1>
-    <nav>
-      <a class="text-white me-3" href="index.html">Home</a>
-      <a class="text-white" href="cadastro_filmes.html">Cadastrar</a>
-    </nav>
+
+<body class="cadastro-filmes bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Cadastrar Novo Filme</h2>
+    
+    <form id="form-filme" class="card p-4 shadow-lg">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="titulo" class="form-label">Título</label>
+          <input type="text" id="titulo" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="genero" class="form-label">Gênero</label>
+          <input type="text" id="genero" class="form-control" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="ano" class="form-label">Ano</label>
+          <input type="number" id="ano" class="form-control" required>
+        </div>
+        <div class="col-md-8">
+          <label for="imagem_principal" class="form-label">Imagem Principal (caminho ou URL)</label>
+          <input type="text" id="imagem_principal" class="form-control" placeholder="ex: public/img/meu-filme.jpg" required>
+        </div>
+
+        <div class="col-12">
+          <label for="descricao" class="form-label">Descrição</label>
+          <textarea id="descricao" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <div class="col-12">
+          <label for="fotos" class="form-label">Outras imagens (separadas por vírgula)</label>
+          <input type="text" id="fotos" class="form-control" placeholder="ex: public/img/foto1.jpg, public/img/foto2.jpg">
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Destaque?</label><br>
+          <input type="checkbox" id="destaque">
+          <label for="destaque">Exibir no carrossel de destaques</label>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-success px-4">Salvar Filme</button>
+        <a href="index.html" class="btn btn-secondary px-4">Voltar</a>
+      </div>
+    </form>
   </div>
-</header>
 
-<main class="container my-5">
-  <h2 class="text-center mb-4">Cadastrar Novo Filme</h2>
+  <script>
+    const API_URL = "http://localhost:3001/filmes";
 
-  <form id="form-filme" class="bg-dark p-4 rounded shadow">
-    <div class="mb-3">
-      <label for="titulo" class="form-label text-white">Título</label>
-      <input type="text" class="form-control" id="titulo" required>
-    </div>
+    document.getElementById("form-filme").addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-    <div class="mb-3">
-      <label for="genero" class="form-label text-white">Gênero</label>
-      <input type="text" class="form-control" id="genero" required>
-    </div>
+      const novoFilme = {
+        titulo: document.getElementById("titulo").value.trim(),
+        genero: document.getElementById("genero").value.trim(),
+        ano: parseInt(document.getElementById("ano").value),
+        descricao: document.getElementById("descricao").value.trim(),
+        imagem_principal: document.getElementById("imagem_principal").value.trim(),
+        fotos: document.getElementById("fotos").value
+          ? document.getElementById("fotos").value.split(",").map(f => f.trim())
+          : [],
+        destaque: document.getElementById("destaque").checked
+      };
 
-    <div class="mb-3">
-      <label for="ano" class="form-label text-white">Ano</label>
-      <input type="number" class="form-control" id="ano" required>
-    </div>
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(novoFilme)
+        });
 
-    <div class="mb-3">
-      <label for="descricao" class="form-label text-white">Descrição</label>
-      <textarea class="form-control" id="descricao" rows="3" required></textarea>
-    </div>
-
-    <div class="mb-3">
-      <label for="imagem" class="form-label text-white">URL da Imagem</label>
-      <input type="url" class="form-control" id="imagem" required>
-    </div>
-
-    <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
-  </form>
-</main>
-
-<footer class="bg-dark text-white text-center py-3 mt-4">
-  &copy; 2025 — Portal de Filmes
-</footer>
-
-<script>
-const API_URL = "http://localhost:3000/filmes";
-
-document.getElementById("form-filme").addEventListener("submit", async function(e) {
-  e.preventDefault();
-
-  const novoFilme = {
-    titulo: document.getElementById("titulo").value,
-    genero: document.getElementById("genero").value,
-    ano: parseInt(document.getElementById("ano").value),
-    descricao: document.getElementById("descricao").value,
-    imagem: document.getElementById("imagem").value
-  };
-
-  try {
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(novoFilme)
+        if (response.ok) {
+          alert("Filme cadastrado com sucesso!");
+          document.getElementById("form-filme").reset();
+        } else {
+          alert("Erro ao cadastrar o filme. Verifique os dados.");
+        }
+      } catch (error) {
+        console.error("Erro:", error);
+        alert("Erro na conexão com o servidor JSON.");
+      }
     });
-
-    if (response.ok) {
-      alert("Filme cadastrado com sucesso!");
-      window.location.href = "index.html";
-    } else {
-      alert("Erro ao cadastrar o filme.");
-    }
-  } catch (error) {
-    alert("Erro de conexão com o servidor.");
-  }
-});
-</script>
+  </script>
 </body>
 </html>

@@ -27,9 +27,10 @@
 </footer>
 
 <script>
-const API_URL = "http://localhost:3000/filmes";
+const API_URL = "http://localhost:3001/filmes";
 const urlParams = new URLSearchParams(window.location.search);
 const filmeId = urlParams.get("id");
+
 async function carregarDetalhes() {
   try {
     const response = await fetch(`${API_URL}/${filmeId}`);
@@ -41,14 +42,20 @@ async function carregarDetalhes() {
 }
 
 function exibirDetalhes(filme) {
+  const fotosHTML = filme.fotos
+    ? filme.fotos.map(f => `<img src="${f}" class="img-thumbnail m-1" width="150" alt="${filme.titulo}">`).join("")
+    : "";
+
   document.getElementById("detalhes-filme").innerHTML = `
     <div class="card shadow-lg">
-      <img src="${filme.imagem}" class="card-img-top" alt="${filme.titulo}">
+      <img src="${filme.imagem_principal}" class="card-img-top" alt="${filme.titulo}">
       <div class="card-body">
         <h3 class="card-title">${filme.titulo}</h3>
         <p class="text-muted">${filme.genero} | ${filme.ano}</p>
-        <p>${filme.descricao}</p>
-        <div class="d-flex gap-2 mt-3">
+        <p>${filme.sinopse}</p>
+        <h5 class="mt-3">Outras imagens:</h5>
+        <div class="d-flex flex-wrap">${fotosHTML}</div>
+        <div class="d-flex gap-2 mt-4">
           <a href="index.html" class="btn btn-secondary">Voltar</a>
           <button class="btn btn-danger" onclick="deletarFilme(${filme.id})">Excluir</button>
         </div>
@@ -56,6 +63,7 @@ function exibirDetalhes(filme) {
     </div>
   `;
 }
+
 async function deletarFilme(id) {
   if (confirm("Tem certeza que deseja excluir este filme?")) {
     await fetch(`${API_URL}/${id}`, { method: "DELETE" });
@@ -63,6 +71,7 @@ async function deletarFilme(id) {
     window.location.href = "index.html";
   }
 }
+
 document.addEventListener("DOMContentLoaded", carregarDetalhes);
 </script>
 </body>
