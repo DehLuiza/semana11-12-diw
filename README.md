@@ -14,7 +14,7 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 - Matricula:875055
 - Proposta de projeto escolhida: Site de filmes 
 - Breve descrição sobre seu projeto:
-
+ Um portal de filmes é uma aplicação web que permite: Visualizar um catálogo de filmes; Cadastrar novos filmes; Editar e excluir registros existentes; Exibir detalhes de cada filme em uma página separada.
 **Print dos testes da API com Postman ou similar**
 
 << COLOQUE A IMAGEM GET AQUI >>
@@ -63,9 +63,9 @@ Para iniciar o JSONServer e acessar os arquivos do seu site, siga os seguintes p
    Isso vai executar o JSONServer e permitir que você consiga acessar o seu site no navegador.
 5. Para testar o projeto:
    1. **Site Front End**: abra um navegador e acesse o seu site pela seguinte URL: 
-      [http://localhost:3000]()
+      [http://localhost:3001]()
    2. **Site Back End**: abra o navegador e acesse as informações da estrutura de usuários por meio da API REST do JSONServer a partir da seguinte URL: 
-      [http://localhost:3000/usuarios](http://localhost:3000/usuarios)
+      [http://localhost:3001git add README.md docs//usuarios](http://localhost:3000/usuarios)
 
 Ao criar suas estruturas de dados no arquivo db.json, você poderá obter estes dados através do endereço: http://localhost:3000/SUA_ESTRUTURA, tal qual como foi feito com a estrutura de usuários. **IMPORTANTE**: Ao editar o arquivo db.json, é necessário parar e reiniciar o JSONServer.
 
